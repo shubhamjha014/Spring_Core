@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+   
+	<!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>--> 
+	
+	
+	<!-- this is a bean -->
+	
+
+	
+	<bean class="com.springcore.auto.wire.annotation.Address" name="address1">
+		<property name="street" value="Jhauganj">
+		</property>
+		<property name="city">
+			<value>"Patna"</value>
+		</property>
+		
+		<property name="state">
+			<value>"Bihar"</value>
+		</property>
+	</bean>
+	<bean class="com.springcore.auto.wire.annotation.Address" name="address2">
+		<property name="street" value="Gulmohar Garden">
+		</property>
+		<property name="city">
+			<value>"Kanpur"</value>
+		</property>
+		
+		<property name="state">
+			<value>"UP"</value>
+		</property>
+	</bean>
+	
+	<bean class="com.springcore.auto.wire.annotation.Emp" name="emp1" />
+	
+</beans>

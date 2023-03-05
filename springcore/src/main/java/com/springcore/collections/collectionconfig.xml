@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- this is a bean -->
+	
+	<bean name="emp1" class="com.springcore.collections.Emp">
+		<property name="name" value="Radhe">
+		</property>
+		<property name="phones" >
+		<list>
+			<value>747666</value>
+			<value>888888</value>
+			<value>417543</value>
+		</list>
+		</property>
+		<property name="addresses" >
+		<set>
+			<value>Delhi</value>
+			<value>Bangalore</value>
+			<value>Patna</value>
+		</set>
+		</property>
+		<property name="courses" >
+		<map>
+			<entry key="Java" value="2 months"></entry>
+			<entry key="Python" value="1 months"></entry>
+			<entry key="C++" value="3 months"></entry>
+		</map>
+		</property>
+		<property name="props">
+            <props>
+                <prop key="color">Black</prop>
+                <prop key="type">CD</prop>
+                <prop key="duration">1 Hour</prop>
+            </props>
+        </property>
+	</bean>
+	
+	
+</beans>
