@@ -10,6 +10,13 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/stereotype/stereo_config.xml");
 		Student student = context.getBean("student1",Student.class);
 		System.out.println(student);
+//		System.out.println(student.hashCode());
+//		Student student2 = context.getBean("student1",Student.class);
+//		System.out.println(student2.hashCode());
+		Teacher t1 = context.getBean("teacher",Teacher.class);
+		System.out.println(t1.hashCode());
+		Teacher t2 = context.getBean("teacher",Teacher.class);
+		System.out.println(t2.hashCode());
 		
 	}
 
